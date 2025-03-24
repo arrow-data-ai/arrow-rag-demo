@@ -5,4 +5,6 @@ langchain-community
 langchain-huggingface
 langchain-nvidia-ai-endpoints
 langchain-unstructured
-faiss-cpu
+unstructured
+unstructured[pdf]
+faiss-gpu

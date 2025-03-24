@@ -37,41 +37,36 @@ Follow these steps to set up and run the demo:
 
 **1. Install Ollama and LLM Models**
 
-Install [Ollama](https://ollama.com) and ensure the LLM models you want to use are installed. Run the following command for each model:
+Install **[Ollama](https://ollama.com)** and ensure the LLM models you want to use are installed. Run the following command for each model:
 
-```ollama pull <modelname>```
+    ollama pull <modelname> 
 
-Example: 
-
-```ollama pull llama3.1 ```
-
-```ollama pull phi3.5```
-
-```ollama pull gemma2```
+You can replace ```<modelname>``` with ```llama3.1 ```, ```phi3.5```, and ```gemma2```for this demo. 
 
 
 **2. Install Required Packages**
 
 Install the necessary Python packages listed in requirements.txt:
 
-```pip install -r requirements.txt```
+    pip install -r requirements.txt
 
 **3. Set NVIDIA_API_KEY**:
 
 Generate your API key from [NVIDIA NIMs API Catalog](https://build.nvidia.com/explore/discover) and run the following command in your environment's terminal: 
 
-```NVIDIA_API_KEY='nvapi-???' ```
+    export NVIDIA_API_KEY='nvapi-???'
 
 This step is required to run the demo properly. 
 
 **4. Run the Frontend**
 Start the Streamlit app:
 
-```streamlit run rag.py```
+    streamlit run rag.py
 
 **4. Open Port 8501**
 
-Make sure port 8501 is open on your localhost to access the demo in your browser. You can change the port in config.toml file in the .streamlit folder. 
+Make sure port ```8501``` is open on your localhost to access the demo in your browser. You can change the port in ```./.streamlit/config.toml``` file. 
+
 
 **5. Experiment with the Demo**
 
